@@ -1,0 +1,7 @@
+docker build -t mygamereg.azurecr.io/tetris-game:latest .
+
+
+az acr login --name mygamereg
+
+
+docker push mygamereg.azurecr.io/tetris-game:latest
