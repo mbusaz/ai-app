@@ -31,6 +31,28 @@
                 </div>
             </form>
         </div>
+        <div>
+            <h2>Recent Search</h2>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Translated Text</th>
+                    <th scope="col">Original Text</th>
+                    <th scope="col">Language Code</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for x in myresult %}
+                  <tr>
+                    <td>{{ x[0] }}</td>
+                    <td>{{ x[1] }}</td>
+                    <td>{{ x[2] }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            
+            </div>
     </div>
 </body>
 </html>
